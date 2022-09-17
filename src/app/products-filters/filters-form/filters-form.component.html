@@ -1,0 +1,80 @@
+<form [formGroup]="filtersForm" class="row">
+    <div class="col m2 s6">
+      <label>Filter Category</label>
+      <div class="input-field col s12">
+        <select class="browser-default" formControlName="empresaControl">
+          <option value="" disabled selected>Elige Empresa</option>
+          <option value="SanCor Salud">SanCor Salud</option>
+          <option value="Omint">Omint</option>
+          <option value="Galeno">Galeno</option>
+          <option value="Premedic">Premedic</option>
+          <option value="Avalian">Avalian</option>
+          <option value="Swiss Medical">Swiss Medical</option>
+        </select>
+      </div>
+    </div>
+    <div class="col m3 s6">
+      <label>Rating</label>
+      <div class="">
+        <label>
+          <input class="with-gap" name="rating" formControlName="rating" type="radio" (click)="filterRating(1)" value="1"/>
+          <span>1</span>
+        </label>
+        <label>
+          <input class="with-gap" name="rating" formControlName="rating" type="radio" (click)="filterRating(2)" value="2"/>
+          <span>2</span>
+        </label>
+        <label>
+          <input class="with-gap" name="rating" formControlName="rating" type="radio" (click)="filterRating(3)" value="3"/>
+          <span>3</span>
+        </label>
+        <label>
+          <input class="with-gap" name="rating" formControlName="rating" type="radio" (click)="filterRating(4)" value="4"/>
+          <span>4</span>
+        </label>
+        <label>
+          <input class="with-gap" name="rating" formControlName="rating" type="radio" (click)="filterRating(5)" value="5"/>
+          <span>5</span>
+        </label>
+      </div>
+    </div>
+    <div class="col m1 s6"><label>
+      <input type="checkbox" (change)="changeHijosSolo()" formControlName="hijosSoloControl"/>
+      <span>Aceptan Hijos solos</span>
+    </label></div>
+    <div class="col m4 s6">
+      <div class="input-field">
+        <i class="material-icons prefix">Buscar</i>
+        <input placeholder="Search Product.." formControlName="search">
+      </div>
+    </div>
+    <div class="col m2 s6">
+      <label>Ordenar por</label>
+      <select class="browser-default" formControlName="sortControl">
+        <option value="+nombre">Nombre - ASC</option>
+        <option value="-nombre">Nombre - DESC</option>
+        <option value="+price">Precio - ASC</option>
+        <option value="-price">Precio - DESC</option>
+        <option value="+rating">Rating - ASC</option>
+        <option value="-rating">Ratin - DESC</option>
+        <option value="+empresa">Empresa - ASC</option>
+        <option value="-empresa">Empresa - DESC</option>
+      </select>
+    </div>
+  </form>
+  
+  <div *ngIf="(filters$ | async).length">
+    Filtro :
+  
+    <div class="chip" *ngFor="let filter of (filters$ | async)" (click)="removeFilter(filter.id)">
+      {{filter.name}}
+      <i class="close material-icons">cerrar</i>
+    </div>
+  
+    <a class="waves-effect waves-teal btn-flat" (click)="removeFilterAll()">remover todo</a>
+  
+  </div>
+  
+  <a (click)="getNormalizedFilters()" class="btn waves-effect waves-light ">getNormalizedFilters (check the console)</a>
+  <a (click)="refresh()" class="btn waves-effect waves-light ">actualizar ({{nbRefresh}})</a>
+  
