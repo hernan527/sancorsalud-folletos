@@ -15,6 +15,7 @@ export interface DialogData {
   clinicasmap:any;
   entidades: any;
   producto: any;
+  folleto:any;
 }
 
 @Component({
@@ -36,6 +37,7 @@ export class HomeProductsComponent implements OnInit {
   clinicasmap:any;
   entidades: any;
   producto: any;
+  folleto:any;
 
   dialogRef: MatDialogRef<MasDetallesComponent>;
 
@@ -76,6 +78,7 @@ export class HomeProductsComponent implements OnInit {
       clinicasmap: product ? product.clinicasmap : '', 
       entidades: product ? product.entidades : '',
       users: product ? product.clinicas : '',
+      folleto: product ? product.folleto :'',
       producto: product
 
       },

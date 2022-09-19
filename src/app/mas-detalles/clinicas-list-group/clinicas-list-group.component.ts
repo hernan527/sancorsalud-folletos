@@ -24,38 +24,10 @@ export class ClinicasListGroupComponent implements OnInit {
   Users: USERS[] = this.data.clinicas;
   
 
-  // Users = {
-  //   users: [
-  //     {
-  //       id: 'person1',
-  //       first_name: 'Mike',
-  //       last_name: 'Patty',
-  //       city: 'LA'
-  //     },
-  //     {
-  //       id: 'person2',
-  //       first_name: 'Mike2',
-  //       last_name: 'Patty2',
-  //       city: 'LA'
-  //     },
-  //     {
-  //       id: 'person3',
-  //       first_name: 'Mike3',
-  //       last_name: 'Patty3',
-  //       city: 'SF'
-  //     },
-  //     {
-  //       id: 'person4',
-  //       first_name: 'Mike4',
-  //       last_name: 'Patty4',
-  //       city: 'SF'
-  //     }
-  //   ]
-  // };
-
+ 
   constructor(public dialogRef: MatDialogRef<ClinicasListGroupComponent>,@Inject(MAT_DIALOG_DATA) public data: DialogData,
   ) {
-// console.log(this.Users);
+
 }
 
 
@@ -66,9 +38,6 @@ export class ClinicasListGroupComponent implements OnInit {
     console.log(this.data.category),
     console.log(this.data.rating),
     console.log(this.data.clinicas),
-    console.log(this.data.clinicasArrayObjets),
-    console.log(this.data.clinicasmap),
-    console.log(this.data.entidades),
     console.log(this.data.producto)
   }
 

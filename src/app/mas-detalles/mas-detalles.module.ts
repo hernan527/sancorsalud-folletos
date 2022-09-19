@@ -13,6 +13,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {ClinicasListGroupComponent} from './clinicas-list-group/clinicas-list-group.component';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {MatCardModule} from '@angular/material/card';
+import { PdfViewerModule} from 'ng2-pdf-viewer';
+import { PdfViewerComponent} from './pdf-viewer/pdf-viewer.component';
+
 
 
 
@@ -26,12 +29,15 @@ import {MatCardModule} from '@angular/material/card';
         MatDialogModule,
         TableModule,
         MatTabsModule,
-        MatCardModule
+        MatCardModule,
+        PdfViewerModule,
     ],
     declarations: [
         MasDetallesComponent,
         ClinicasListComponent,
-        ClinicasListGroupComponent
+        ClinicasListGroupComponent,
+        PdfViewerComponent
+        
         
     ],
     providers: [MDCDataTable],
@@ -45,3 +51,4 @@ export class MasDetallesModule {
 
 platformBrowserDynamic().bootstrapModule(MasDetallesModule)
 .catch(err => console.error(err));
+

@@ -3,6 +3,7 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialo
 import {DialogData} from '../home/home-products/home-products.component';
 import { ActivatedRoute, Router, RouterLinkActive, Routes } from '@angular/router';
 
+
 interface PRODUCTOS {
   empresa: Number;
   name: string;
@@ -39,9 +40,10 @@ export class MasDetallesComponent implements OnInit, OnDestroy {
   constructor(public dialogRef: MatDialogRef<MasDetallesComponent>,private route: ActivatedRoute,
     private router: Router,
     private changeDetector: ChangeDetectorRef,
-   
-    @Inject(MAT_DIALOG_DATA) public data: DialogData,
-   ) {}
+       @Inject(MAT_DIALOG_DATA) public data: DialogData,
+   ) { 
+   }
+
 
   mySortingFunction = (a, b) => {
     return a.key > b.key ? -1 : 1;
@@ -61,9 +63,6 @@ export class MasDetallesComponent implements OnInit, OnDestroy {
     console.log(this.data.category),
     console.log(this.data.rating),
     console.log(this.data.clinicas),
-    console.log(this.data.clinicasArrayObjets),
-    console.log(this.data.clinicasmap),
-    console.log(this.data.entidades),
     console.log(this.data.producto),
     this.navLinks = (
       this.route.routeConfig && this.route.routeConfig.children ?

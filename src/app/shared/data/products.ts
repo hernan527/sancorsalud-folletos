@@ -3,7 +3,10 @@ export class productsDB {
     {
       name: 'SanCor 700A',
       images: ['assets/images/planes_sancor/Feed 800V-sm(680x664).jpg'],
+
       empresa: 'SanCor Salud',
+      folleto: 'https://www.drivehq.com/file/DFPublishFile.aspx/FileID9493299295/Keyqrhu3bimne5i/800v.pdf',
+      
       clinicas: [
            {
            "nombre":"Cemic",
@@ -634,6 +637,7 @@ export class productsDB {
     {
        name: 'SanCor 1000B',
        empresa: 'SanCor Salud',
+       folleto: 'https://www.drivehq.com/file/DFPublishFile.aspx/FileID9493299342/Keyubnn4kwahmsj/1000B.pdf',
       images: ['assets/images/planes_sancor/Feed 1000B-sm(680x664).jpg'],
       clinicas: [
            {
@@ -1346,6 +1350,7 @@ export class productsDB {
     {
        name: 'SanCor 1500B',
        empresa:'SanCor Salud',
+       folleto: 'https://www.drivehq.com/file/DFPublishFile.aspx/FileID9493299374/Key84ctc8rcu2xj/1500B.pdf',
       images: ['assets/images/planes_sancor/Feed 1500B-sm(680x664).jpg'],
       clinicas: [
            {
@@ -2130,6 +2135,7 @@ export class productsDB {
     {
       name: 'SanCor 3000B',
       empresa: 'SanCor Salud',
+      folleto: 'https://www.drivehq.com/file/DFPublishFile.aspx/FileID9493299430/Key6o9nt4tgdqw5/3000B.pdf',
       images: ['assets/images/planes_sancor/Feed 3000B-sm(680x664).jpg'],
       clinicas: [
            {
@@ -3018,6 +3024,7 @@ export class productsDB {
       name: 'SanCor 3500',
       empresa: 'SanCor Salud',
       images: ['assets/images/planes_sancor/Feed 3500-sm(680x664).jpg'],
+      folleto: 'https://www.drivehq.com/file/DFPublishFile.aspx/FileID9493299460/Keyil60at8vwa8d/3500.pdf',
       clinicas: [
            {
            "nombre":"Cemic",
@@ -3913,6 +3920,7 @@ export class productsDB {
     {
        name: 'SanCor 4000',
       emrpesa:'SanCor Salud',
+      folleto: 'https://www.drivehq.com/file/DFPublishFile.aspx/FileID9493299527/Keykgfs0iv2pth9/4000.pdf',
       images: ['assets/images/planes_sancor/Feed 4000-sm(680x664).jpg'],
       clinicas: [
            {
@@ -4809,6 +4817,7 @@ export class productsDB {
     {
        name: 'SanCor 4500',
        empresa: 'SanCor Salud',
+       folleto: 'https://www.drivehq.com/file/DFPublishFile.aspx/FileID9493299698/Keygum635u13pe7/4500.pdf',
       images: ['assets/images/planes_sancor/Feed 4500-sm(680x664).jpg'],
       clinicas: [
            {
@@ -5704,6 +5713,7 @@ export class productsDB {
     {
        name: 'Exclusive 5000 ',
        empresa: 'SanCor Salud',
+       folleto: 'https://www.drivehq.com/file/DFPublishFile.aspx/FileID9493299761/Keycppyb42hvkfk/5000.pdf',
       images: ['assets/images/planes_sancor/Folleto Exclusive S5000-sm(680x640).jpg'],
       clinicas: [
            {
@@ -6600,7 +6610,8 @@ export class productsDB {
     {
        name: 'Exclusive 6000',
        empresa:'SanCor Salud',
-      images: ['assets/images/planes_sancor/Folleto Exclusive S6000-sm(680x640).jpg'],
+       folleto: 'https://www.drivehq.com/file/DFPublishFile.aspx/FileID9493299822/Keyg3h1l25i0ohw/6000.pdf',
+       images: ['assets/images/planes_sancor/Folleto Exclusive S6000-sm(680x640).jpg'],
       clinicas: [
            {
            "nombre":"Cemic",
@@ -7496,6 +7507,7 @@ export class productsDB {
     {
        name: 'SanCor 700A',
        empresa:'SanCor Salud',
+       folleto: 'https://www.drivehq.com/sharing/ShareLogon.aspx?key=17356862/w8v5pe2aelqe',
       images: ['assets/images/planes_sancor/Feed 700A-sm(680x664).jpg'],
       clinicas: [
            {

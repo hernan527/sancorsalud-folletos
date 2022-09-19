@@ -6,3 +6,18 @@
   padding: 0px;
   display:auto;
 }
+/* Style the buttons */
+.btn {
+  border: 0.5px;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+  background-color: #666;
+  
+}

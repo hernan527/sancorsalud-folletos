@@ -19,6 +19,7 @@ import {MarkdownModule} from 'ngx-markdown';
 import {environment} from '../environments/environment';
 
 
+
 // import { LoadingButtonComponent } from './loading-button/loading-button.component';
 
 
@@ -39,6 +40,7 @@ import {environment} from '../environments/environment';
     HttpClientModule,
     MasDetallesModule,
     ReactiveFormsModule,
+   
     environment.production ? [] : AkitaNgDevtools.forRoot(),
     
 
@@ -46,6 +48,7 @@ import {environment} from '../environments/environment';
   ],
   providers: [{
     provide: NG_ENTITY_SERVICE_CONFIG,
+    
     useValue: {
       baseUrl: 'https://jsonplaceholder.typicode.com'
     }
