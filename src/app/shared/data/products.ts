@@ -637,7 +637,7 @@ export class productsDB {
     {
        name: 'SanCor 1000B',
        empresa: 'SanCor Salud',
-       folleto: 'https://www.drivehq.com/file/DFPublishFile.aspx/FileID9493299342/Keyubnn4kwahmsj/1000B.pdf',
+       folleto: 'https://github.com/hernan527/miplandesalud/blob/master/src/assets/archivos/1000B.pdf',
       images: ['assets/images/planes_sancor/Feed 1000B-sm(680x664).jpg'],
       clinicas: [
            {
@@ -1350,7 +1350,7 @@ export class productsDB {
     {
        name: 'SanCor 1500B',
        empresa:'SanCor Salud',
-       folleto: 'https://www.drivehq.com/file/DFPublishFile.aspx/FileID9493299374/Key84ctc8rcu2xj/1500B.pdf',
+       folleto: 'https://github.com/VadimDez/ng2-pdf-viewer/blob/master/src/assets/pdf-test.pdf',
       images: ['assets/images/planes_sancor/Feed 1500B-sm(680x664).jpg'],
       clinicas: [
            {
